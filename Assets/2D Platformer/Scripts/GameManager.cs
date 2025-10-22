@@ -22,6 +22,7 @@ namespace Platformer
         void Update()
         {
             coinText.text = coinsCounter.ToString();
+            Debug.Log(coinsCounter);
             if(player.deathState == true)
             {
                 playerGameObject.SetActive(false);
